@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+:root{
+  --bg-py: rgb(70, 225, 70);
+  --bg-sy: #FFFF00;
+}
+
+.container{
+  width: 1250px;
+  margin: auto;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .container{
+    width: 96%;
+  }
+}

@@ -1,0 +1,176 @@
+.single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.chap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: -243px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: -235px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.right{
+    margin-top: -20px;
+    margin-left: -100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: left;
+}
+
+.rasm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.bingo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn{
+    font-size: 20px;
+}
+
+.pv{
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.v{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.cl{
+    text-align: left;
+    background: #dfdcdc;
+    border: none;
+    height: 40px;
+    width: 470px;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.font{
+    background: yellow;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.qwe{
+    width: 230px;
+    height: 40px;
+    background: var(--bg-py);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.qwer{
+    width: 230px;
+    height: 40px;
+    color: var(--bg-py);
+    border: 2px solid var(--bg-py);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+.part2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ai{
+    background-color: rgb(201, 199, 164);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 470px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.right h2{
+    font-size: 30px;
+}
+
+.partp{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.narx p{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.v del{
+    margin-top: 12px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.heart{
+    font-size: 17px;
+}
+
+.miqdor{
+    width: 70px;
+    border: 1.7px solid black;
+    border-radius: 5px;
+}

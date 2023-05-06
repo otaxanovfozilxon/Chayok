@@ -1,0 +1,133 @@
+.navbar_top{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo{
+    color: var(--bg-py);
+    margin-right: 20px;
+}
+
+.nav_search{
+    height: 34px;
+    border: 1px solid #ddd;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.nav_search input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+}
+
+.nav_search button{
+    width: 60px;
+    background: #f8f8f8;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+}
+
+.nav_icons{
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav_item{
+    height: 34px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav_item span{
+    font-size: 12px;
+}
+
+.navbar_bottom::-webkit-scrollbar{
+    height: 0;
+}
+
+/* Yangi narsa ^ v bor */
+
+.nav_collection{
+    display: flex;
+    gap: 20px;
+    padding: 5px 0;
+}
+
+.nav_none{
+    display: none;
+}
+
+.nav_nonee{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .nav_icons{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+        border-top: 1px solid #f7f7f7;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav_item{
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .nav_item span{
+        font-size: 12px;
+    }
+    
+    .nav_item svg{
+        font-size: 20px;
+    }
+
+    .nav_none{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar_top{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+
+    .nav_search{
+        flex: auto;
+        width: 100%;
+    }
+
+    .nav_catalog span{
+        display: none;
+    }
+}
+
+.qw{
+    display: none;
+}

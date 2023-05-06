@@ -1,0 +1,13 @@
+.empty{
+    text-align: center;
+    padding: 80px 0;
+    line-height: 2;
+}
+
+.empty button{
+    padding: 8px;
+    background:  var(--bg-py);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}

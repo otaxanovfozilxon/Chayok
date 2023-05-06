@@ -1,0 +1,13 @@
+.app{
+    width: 100%;
+    min-height: 100vh;
+    transition: .3s;
+}
+.dark{
+    background: #222;
+    color: #ddd;
+}
+
+.not__found{
+    text-align: center;
+}
