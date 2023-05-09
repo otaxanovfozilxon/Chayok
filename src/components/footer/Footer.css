@@ -1,0 +1,25 @@
+.footer{
+    background: var(--bg-py);
+    width: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.tel{
+    text-align: center;
+    color: white;
+}
+
+.tel p {
+    font-size: 17px;
+}
+
+@media screen and (max-width:900px){
+    .footer{
+        padding-bottom: 60px;
+        height: auto;
+    }
+}

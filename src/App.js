@@ -9,6 +9,7 @@ import Login from "./router/login/Login"
 import SingleRouter from "./router/SingleRouter/SingleRouter"
 import Admin from './router/admin/Admin';
 import { useSelector } from 'react-redux';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
         <Route path='/product/:id' element={<SingleRouter />} />
         <Route path='*' element={<h1 className='not__found'>404</h1>} />
       </Routes>
+
+      <Footer />
 
       <div className="container">
       
