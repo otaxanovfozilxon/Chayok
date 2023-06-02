@@ -15,7 +15,6 @@ function Siderbar() {
         <li className='sidebar_item'>
           <NavLink to="/admin/manage-product" className="sidebar_link" ><span>Manage Product</span></NavLink>
         </li>
-        <button><Link to="/">Go to home</Link></button>
         <button onClick={() => dispatch({type:"LOG_OUT"})} >LOG OUT</button>
       </ul>
     </div>

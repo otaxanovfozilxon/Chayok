@@ -80,41 +80,13 @@
     justify-content: left;
 }
 
-.cl{
-    text-align: left;
-    background: #dfdcdc;
-    border: none;
-    height: 40px;
-    width: 470px;
-    font-size: 18px;
-    margin-top: 30px;
-    border-radius: 5px;
-}
-
-.font{
-    background: yellow;
-    margin-left: 5px;
-    border-radius: 2px;
-}
-
 .qwe{
     width: 230px;
     height: 40px;
-    background: var(--bg-py);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.qwer{
-    width: 230px;
-    height: 40px;
+    background: white;
     color: var(--bg-py);
     border: 2px solid var(--bg-py);
-    border-radius: 10px;
+    border-radius: 10px 0 10px 0;
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
@@ -135,23 +107,14 @@
     gap: 10px;
 }
 
-.ai{
-    background-color: rgb(201, 199, 164);
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 470px;
-    text-align: center;
-    margin-top: 20px;
+.about{
+  background: var(--bg-py);
+  color: white;
+  border-radius: 10px 0 10px 0;
 }
 
 .right h2{
     font-size: 30px;
-}
-
-.partp{
-    font-size: 19px;
-    margin-top: 10px;
 }
 
 .narx p{
@@ -159,18 +122,97 @@
     margin-top: 10px;
 }
 
-.v del{
-    margin-top: 12px;
-    font-size: 16px;
-    margin-left: 20px;
-}
-
 .heart{
     font-size: 17px;
 }
 
-.miqdor{
-    width: 70px;
-    border: 1.7px solid black;
-    border-radius: 5px;
-}
+
+@media (max-width: 768px) {
+    .single {
+      flex-direction: column;
+    }
+    
+    .left {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .rasm{
+      display: none;
+    }
+    /* 8600 0609 5585 4972 */
+    
+    .right {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .cl {
+      width: 100%;
+      font-size: 16px;
+    }
+    
+    .qwe, .qwer {
+      width: 100%;
+    }
+
+    .pv{
+      margin-left: 43%;
+    }
+    
+    .gul {
+      margin-left: 0;
+      justify-content: flex-start;
+    }
+    
+    .ai {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .right h2 {
+      font-size: 24px;
+    }
+    
+    .partp, .narx p {
+      font-size: 16px;
+    }
+    
+    .v del {
+      margin-top: 8px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    
+    .heart {
+      font-size: 14px;
+    }
+    
+    .miqdor {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .single .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      
+    
+      .swiper-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+  }
+  

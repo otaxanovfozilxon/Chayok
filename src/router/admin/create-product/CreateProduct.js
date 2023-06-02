@@ -9,6 +9,7 @@ function CreateProduct() {
   const [title, setTitle] = useState("")
   const [price, setPrice] = useState("")
   const [url, setUrl] = useState("")
+  const [about, setAbout] = useState("")
   const [loading, setLoading] = useState(false)
 
   const productRef = collection(db, "products")
@@ -19,7 +20,8 @@ function CreateProduct() {
     let newProduct = {
       title,
       price: +price,
-      url
+      url,
+      about
     }
     await addDoc(productRef, newProduct)
     .then(res => {
@@ -27,6 +29,7 @@ function CreateProduct() {
       setPrice("")
       setTitle("")
       setUrl("")
+      setAbout("")
     })
     .catch(res => console.log(res))
     .finally(()=> setLoading(false))
@@ -41,6 +44,7 @@ function CreateProduct() {
         <input required value={title} onChange={e => setTitle(e.target.value)} type="text" placeholder='title' />
         <input required value={price} onChange={e => setPrice(e.target.value)} type="number" placeholder='price' />
         <input required value={url} onChange={e => setUrl(e.target.value)} type="text" placeholder='url' />
+        <input required value={about} onChange={e => setAbout(e.target.value)} type="text" placeholder='Mahsulot haqida' />
         <button type='submit' disabled={loading} >{loading ? "Loading..." : "Create Product"}</button>
       </form>
     </div>

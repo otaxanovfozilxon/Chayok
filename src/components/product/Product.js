@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import "./Product.css"
-import { AiOutlineShoppingCart, AiOutlineHeart, AiFillHeart } from "react-icons/ai"
+import { AiOutlineShoppingCart } from "react-icons/ai"
 import { useDispatch, useSelector } from 'react-redux'
-import { ADD_TO_HEART, REMOVE_FROM_HEART, ADD_TO_CART } from "../../context/action/actionType"
+import { ADD_TO_CART } from "../../context/action/actionType"
 import { Link } from 'react-router-dom'
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore'
 import { db } from '../../server'
@@ -116,7 +116,7 @@ function Product({admin}) {
             !data.length && <Loader/>
           }
             {
-                DATA?.map((item, inx)=><div className='product__card' key={inx}>
+                data?.map((item, inx)=><div className='product__card' key={inx}>
                     <div className="pro__card-img">
                       <Link to={`/product/${item.id}`} state={item}>
                         <img src={item.url} alt="" />

@@ -20,7 +20,6 @@
 
   function SingleRouter() {
       const oneItem = useLocation()?.state
-      console.log(oneItem);
       const heart = useSelector(s => s.heart)
 
       const dispatch = useDispatch()
@@ -69,14 +68,7 @@
         </div>
         <div className="right">
         <h2>{oneItem?.title}</h2>
-        <div className="p">
-        <h5>Sotuvchi:</h5>
-        <p>GADGET market</p>
-        </div>
-        <div className="l">
-        <h5>Yetkazib berish:</h5>
-        <p>1 kun, bepul</p>
-        </div>
+        
         <p className='heart'>Sevimliga qo'shish {
                             heart?.some(i => i.id === oneItem.id) ?
                             <AiFillHeart onClick={() => dispatch({type: REMOVE_FROM_HEART, payload: oneItem})} />
@@ -85,21 +77,21 @@
                           } </p>
         <hr />
         <div className="part2">
-        <p className='partp'>Miqdor:</p>
-        <button className='miqdor'>- 0 +</button>
+        
           <div className="narx">
           <p>Narx:</p>
           <div className="v">
-          <p className='pv'>{oneItem?.price} so'm</p> <del>{oneItem?.price * 3 /2} so'm</del>
+          <p className='pv'>{oneItem?.price} so'm</p>
           </div>
           </div>
+      <div className="about">
+        <h3>Mahsulot haqida</h3>
+        <p>{oneItem?.about}</p>
+      </div>
       
-      <button className='cl'><font className='font'>Oyiga {Math.round(oneItem?.price / 12 * 2)} so'mdan</font> muddatli to'lov</button>
   <div className="gul">
       <button className='qwe' onClick={()=> dispatch({type: ADD_TO_CART, payload: oneItem})}>Savatga qo'shish</button>
-      <button className='qwer'>Tugmani 1 bosishda xarid qilish</button>
       </div>
-      <button className='ai'><AiOutlineShoppingCart /> Bu hafta davomida 5 kishi sotib oldi</button>
       </div>
         </div>
         </div>
